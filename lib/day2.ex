@@ -6,7 +6,7 @@ defmodule Day2 do
   end
 
   defp part1 do
-    "input.txt"
+    "input-2.txt"
     |> File.stream!
     |> Enum.map(&to_tuple/1)
     |> Enum.reduce([0, 0], &process_line/2)
@@ -14,7 +14,7 @@ defmodule Day2 do
   end
 
   defp part2 do
-    "input.txt"
+    "input-2.txt"
     |> File.stream!
     |> Enum.map(&to_tuple/1)
     |> Enum.reduce([0, 0, 0], &process_aimed_line/2)

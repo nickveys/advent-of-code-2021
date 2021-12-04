@@ -6,7 +6,7 @@ defmodule Day1 do
   end
 
   defp part1 do
-    "input.txt"
+    "input-1.txt"
     |> File.stream!
     |> Enum.map(&to_int/1)
     |> Enum.chunk_every(2, 1, :discard)
@@ -14,7 +14,7 @@ defmodule Day1 do
   end
 
   defp part2 do
-    "input.txt"
+    "input-1.txt"
     |> File.stream!
     |> Enum.map(&to_int/1)
     |> Enum.chunk_every(3, 1, :discard)
